@@ -1,0 +1,31 @@
+{
+    "name": "inveteratus/acme",
+    "description": "Common Component Suite for Laravel",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Inveteratus",
+            "email": "alan.mcfarlane@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Inveteratus\\Acme\\": "src/"
+        }
+    },
+    "require": {
+        "laravel/framework": "^11.26",
+        "livewire/livewire": "^3.5",
+        "blade-ui-kit/blade-heroicons": "^2.4"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Inveteratus\\Acme\\Providers\\AcmeServiceProvider"
+            ]
+        }
+    }
+}

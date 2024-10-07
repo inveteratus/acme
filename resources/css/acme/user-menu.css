@@ -1,0 +1,33 @@
+div.acme-component-user-menu {
+    @apply relative px-2;
+
+    & > button {
+        @apply rounded-full p-0.5 hover:bg-slate-200 dark:hover:bg-slate-800 border-2 border-transparent
+        focus:bg-slate-200 dark:focus:bg-slate-800 focus:outline-none focus:border-blue-500 dark:focus:border-blue-500;
+
+        & > img {
+            @apply size-8;
+        }
+    }
+
+    & > div {
+        @apply absolute top-16 right-2 bg-slate-100 dark:bg-slate-900 flex flex-col py-1 rounded shadow;
+
+        & > a, & > form > button {
+            @apply flex items-center px-4 space-x-4 justify-start w-full py-1 hover:bg-white dark:hover:bg-slate-950
+            focus:bg-white dark:focus:bg-slate-950 focus:outline-none;
+
+            & > svg {
+                @apply size-5 text-slate-500 dark:text-slate-500;
+            }
+
+            & > span {
+                @apply text-slate-600 dark:text-slate-400;
+            }
+        }
+
+        & > hr {
+            @apply mx-4 my-1 border-slate-300 dark:border-slate-700;
+        }
+    }
+}
