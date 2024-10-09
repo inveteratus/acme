@@ -1,4 +1,4 @@
-export default function () {
+function acmeTheme() {
     return {
         'open': false,
         'dark': null,
@@ -22,4 +22,8 @@ export default function () {
             }
         }
     }
+}
+
+export {
+    acmeTheme
 }
